@@ -1,5 +1,6 @@
 # folder to ignore
 dummy
+tmp
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
