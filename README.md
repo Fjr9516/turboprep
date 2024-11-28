@@ -7,9 +7,33 @@ MRI preprocessing / segmentation in < 30s.
 
 `turboprep` script requires the following softwares to be installed:
 
-* [FreeSurfer](https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall) >= v7.4
-* [ANTs](https://github.com/ANTsX/ANTs)
-* [intensity-normalization](https://github.com/jcreinhold/intensity-normalization)
+---
+
+### 1. [FreeSurfer](https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall)
+   - Version: **>= v7.4**
+   - Installation Options:
+     - **Default Installation**: Use the `install_freesurfer.sh` script for a standard installation in the default location.
+     - **Custom Location Installation**: Use the `install_freesurfer_custom_location.sh` script if you need to install FreeSurfer in a specific directory. 
+
+---
+
+### 2. [ANTs (Advanced Normalization Tools)](https://github.com/ANTsX/ANTs)
+   - Installation: Can be installed via `conda` using the following command:
+     ```bash
+     conda install aramislab::ants
+     ```
+     - Download the MNI152 template scan file:
+     - URL: [MNI152_T1_1mm_brain.nii.gz](https://raw.githubusercontent.com/Washington-University/HCPpipelines/master/global/templates/MNI152_T1_1mm_brain.nii.gz)
+
+---
+
+### 3. [intensity-normalization](https://github.com/jcreinhold/intensity-normalization)
+   - Installation: Install using `pip`:
+     ```bash
+     pip install intensity-normalization
+     ```
+     
+---
 
 A Docker container will be included in the future. 
 
